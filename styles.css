@@ -1,38 +1,45 @@
 * {
-  
   box-sizing: border-box;
 }
 
+body {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
 header {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: darkorange;
   font-size: 1.25rem;
-  height: 10vh;
-  position: fixed;
+  height: 15vh;
   top: 0px;
-  left:0px;
+  left: 0px;
   right: 0px;
 }
 header #navbar {
   display: flex;
   justify-content: flex-end;
- padding-right: 1rem;
+  padding-right: 1rem;
   text-decoration: none;
   align-items: center;
   height: 10vh;
-} 
+}
 
 header #navbar a {
   text-decoration: none;
   padding-right: 1rem;
-   color: white;
-   font-weight: bold;
-   font-family: courier, monospace;
-   
+  color: white;
+  font-weight: bold;
+  font-family: courier, monospace;
 }
 
 main {
-display: flex;
-flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #welcome-section {
@@ -45,7 +52,7 @@ flex-direction: column;
 }
 #welcome-section h1 {
   color: white;
-  font-size: 4rem
+  font-size: 4rem;
 }
 #welcome-section p {
   color: darkorange;
@@ -53,7 +60,7 @@ flex-direction: column;
 }
 
 #projects {
-  background-color: #FF7F7F;
+  background-color: #ff7f7f;
   text-align: center;
   width: 100vw;
   height: auto;
@@ -131,10 +138,10 @@ footer {
 }
 
 @media screen and (max-width: 1000px) {
- header #navbar {
-   justify-content: center;
-   padding-right: 0px;
- }
+  header #navbar {
+    justify-content: center;
+    padding-right: 0px;
+  }
   #welcom-section {
     height: auto;
     padding-bottom: 2rem;
@@ -144,14 +151,12 @@ footer {
   }
   #projects {
     height: auto;
-    
   }
   #projects #first {
     display: flex;
     flex-direction: column;
-    
   }
-  
+
   iframe {
     width: 80vw;
     height: 60vh;
@@ -160,11 +165,11 @@ footer {
     font-size: 2rem;
   }
   .project-tile {
-    background-color: #FF7F7F;
+    background-color: #ff7f7f;
     width: 80vw;
     align-self: center;
   }
-  
+
   #contact {
     height: auto;
   }
